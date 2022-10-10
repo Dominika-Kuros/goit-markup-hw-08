@@ -13,6 +13,7 @@ body {
 }
 h4 {
   color: var(--secondary-color);
+  margin-bottom: 10px;
 }
 
 .logo {
@@ -24,7 +25,7 @@ h4 {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 0.31;
   letter-spacing: 0.03em;
 }
 .logo-black-color {
@@ -47,7 +48,7 @@ a:hover {
   top: 32px;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 0.16;
   letter-spacing: 0.02em;
   color: var(--secondary-color);
 }
@@ -60,7 +61,7 @@ a:hover {
   top: 32px;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 0.16;
   letter-spacing: 0.02em;
   color: var(--secondary-color);
 }
@@ -72,7 +73,7 @@ a:hover {
   top: 32px;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 0.16;
   letter-spacing: 0.02em;
   color: var(--secondary-color);
 }
@@ -85,7 +86,7 @@ a:hover {
   top: 32px;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 0.16;
   letter-spacing: 0.02em;
   color: #757575;
 }
@@ -98,7 +99,7 @@ a:hover {
   color: #757575;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 0.16;
   letter-spacing: 0.02em;
 }
 
@@ -115,10 +116,9 @@ li {
   height: 16px;
   left: 1078px;
   top: 32px;
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 0.16;
   letter-spacing: 0.02em;
   color: var(--secondary-color);
 }
@@ -145,7 +145,7 @@ h1 {
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 0.6;
 
   text-align: center;
   letter-spacing: 0.06em;
@@ -160,50 +160,68 @@ h1 {
   height: 101px;
   left: 215px;
   top: 774px;
+  padding-bottom: 94px;
 }
+
+.lorem-text li {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  margin-inline: 30px;
+}
+
 .what-we-do-list {
   position: absolute;
   width: 1170px;
   height: 386px;
   left: 215px;
   top: 969px;
+  padding-top: 94px;
+}
+.what-we-do-list li {
+  margin-inline: 30px;
+  padding-bottom: 94px;
 }
 
 .what-we-do-title {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 0.42;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
+  padding-bottom: 50px;
 }
 
 .our-team-list {
   position: absolute;
-  width: 1170px;
-  height: 368px;
-  left: 215px;
-  top: 1635px;
+  width: 1600px;
+  height: 648px;
+  left: 0px;
+  top: 1449px;
+  background: #f5f4fa;
+  padding-top: 94px;
+  margin-top: 94px;
 }
 
 .our-team-title {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 0.42;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
+  padding-bottom: 50px;
 }
 
-.card-bg > li {
+.card-bg li {
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  margin-inline: 30px;
 }
 
 .footer-bg {
@@ -231,7 +249,7 @@ h1 {
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 0.31;
   letter-spacing: 0.03em;
 }
 
@@ -252,20 +270,35 @@ h1 {
   background: var(--primary-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  font-family: "Roboto";
+
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 0.3;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
+  font-family: inherit;
 }
-.our-team-bg {
-  position: absolute;
-  width: 1600px;
-  height: 648px;
-  left: 0px;
-  top: 1449px;
-  background: #f5f4fa;
+
+address {
+  font-style: normal;
+}
+.button-list li {
+  width: 121px;
+  height: 38px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 0.26;
+  text-align: center;
+  letter-spacing: 0.03em;
+  display: flexbox;
+}
+
+button:hover {
+  color: white;
+  background: var(--primary-color);
 }
