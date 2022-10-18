@@ -22,6 +22,7 @@ h4 {
   font-size: 26px;
   line-height: 0.31;
   letter-spacing: 0.03em;
+  
 }
 .logo-black-color {
   color: black;
@@ -29,6 +30,7 @@ h4 {
 .logo-position {
   padding-top: 24px;
   padding-bottom: 25px;
+  
 }
 a {
   text-decoration: none;
@@ -45,6 +47,7 @@ a:hover {
   line-height: 0.16;
   letter-spacing: 0.02em;
   color: var(--secondary-color);
+  
 }
 
 .contact {
@@ -103,6 +106,8 @@ li {
   display: flex;
   justify-content: space-between;
   gap: 46px;
+  margin-right: 364px;
+  
 }
 
 .email-adress-position {
@@ -246,7 +251,20 @@ address {
 .button-list {
   display: flex;
   justify-content: center;
-  gap: 8px;}
+  gap: 8px;
+
+}
+
+  .button-list-every-button {
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    
+    border-radius: 4px;
+    
+
+  }
 
 button:hover {
   color: white;
