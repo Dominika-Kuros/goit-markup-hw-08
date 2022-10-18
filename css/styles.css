@@ -13,7 +13,6 @@ body {
 }
 h4 {
   color: var(--secondary-color);
-  margin-bottom: 10px;
 }
 
 .logo {
@@ -25,16 +24,16 @@ h4 {
   letter-spacing: 0.03em;
   margin-top: 24px;
   margin-left: 215px;
-  
 }
 .logo-black-color {
   color: black;
 }
-.logo-position{
+.logo-position {
   margin-top: 24px;
   margin-right: 1240px;
   margin-bottom: 25px;
   margin-left: 215px;
+  padding-top: 24px;
 }
 a {
   text-decoration: none;
@@ -51,7 +50,6 @@ a:hover {
   line-height: 0.16;
   letter-spacing: 0.02em;
   color: var(--secondary-color);
-  
 }
 
 .contact {
@@ -103,18 +101,19 @@ li {
 }
 .header {
   border-bottom: 1px solid rgba(236, 236, 236, 1);
-
 }
-.nav li {
+nav {
   display: flex;
-  justify-content: center;
-  margin-inline: 46px;
-  
+  justify-content: space-between;
 }
 
 .dark-background {
-padding-top:80px;
- background: #2f303a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  background: #2f303a;
 }
 
 h1 {
@@ -126,15 +125,13 @@ h1 {
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
-  margin-top: 200px;
-  margin-right: 452px;
-  margin-bottom: 280px;
-  margin-left: 452px;
 }
 
 .lorem-list {
-  width: 1170px;
-  padding-bottom: 94px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: (calc(100%-30px) / 4);
 }
 
 .lorem-text li {
@@ -142,23 +139,13 @@ h1 {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  display: inline-block;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: (calc(100%-30px) / 4);
 }
 
 .what-we-do-list {
-  width: 1170px;
-  right: 215px;
-}
-
-.what-we-do-list li {
-  width: 370px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  flex-basis: calc((100% - 60px) / 3);
+  gap: calc((100%-60px) / 3);
 }
 
 .what-we-do-title {
@@ -177,6 +164,8 @@ h1 {
 .our-team-list {
   text-align: center;
   display: flex;
+  justify-content: center;
+  gap: calc((100%-90px) / 4);
 }
 .our-team-title {
   font-weight: 700;
@@ -232,13 +221,11 @@ h1 {
 }
 .button {
   cursor: pointer;
-
   width: 200px;
-
+  height: 50px;
   background: var(--primary-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-
   font-weight: 700;
   font-size: 16px;
   line-height: 0.3;
@@ -286,12 +273,7 @@ button:hover {
 }
 .container {
   max-width: 1200 px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  box-sizing: border-box;
   margin: 0 auto;
-  padding: 0 15px;
 }
 
 .section {
