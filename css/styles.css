@@ -6,7 +6,6 @@
 body {
   font-family: "Roboto", sans-serif;
   color: #757575;
-  cursor: pointer;
 }
 .blue {
   color: var(--primary-color);
