@@ -37,6 +37,7 @@ a {
 a:visited {
   color: none;
 }
+
 a:hover {
   color: var(--primary-color);
 }
@@ -71,6 +72,7 @@ a:hover {
   letter-spacing: 0.02em;
   color: #757575;
 }
+
 .ph-number {
   width: 110px;
   color: #757575;
@@ -79,7 +81,9 @@ a:hover {
   line-height: 0.16;
   letter-spacing: 0.02em;
 }
-
+/* .ph-number:before{
+  content: url(../images/icons/icon-envelope);
+} */
 .color:hover {
   stroke: var(--primary-color);
 }
@@ -91,14 +95,6 @@ li {
   list-style-type: none;
 }
 
-.address-email {
-  width: 135px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 0.16;
-  letter-spacing: 0.02em;
-  color: var(--secondary-color);
-}
 .header {
   border-bottom: 1px solid rgba(236, 236, 236, 1);
   display: flex;
@@ -116,6 +112,10 @@ li {
   display: flex;
   justify-content: space-between;
   gap: 50px;
+}
+
+.email-adress-position a:hover {
+  stroke: var(--primary-color);
 }
 
 main .dark-background {
@@ -292,6 +292,21 @@ button:focus {
 .portfolio-photos li {
   border: 1px solid #eeeeee;
   margin-bottom: 30px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.portfolio-photos li:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio-card-text {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 20px 24px;
 }
 
 .container {
@@ -382,4 +397,19 @@ button:focus {
   display: flex;
   align-items: flex-start;
   gap: 70px;
+}
+
+.border-clients-icons {
+  width: 170px;
+  height: 90px;
+  display: flex;
+  border: 1px solid #afb1b8;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.border-clients-icons:hover {
+  --color3: var(--primary-color);
+  border-color: var(--primary-color);
 }
