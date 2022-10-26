@@ -128,7 +128,7 @@ main .dark-background {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/Img.jpg);
+    url(/images/Img.jpg);
   background-size: cover;
   max-width: 1600px;
 }
