@@ -114,10 +114,17 @@ li {
   gap: 50px;
 }
 
-.email-adress-position a:hover {
+.email-adress-position a:hover,
+.email-adress-position li:hover {
   stroke: var(--primary-color);
 }
-
+.email-adress-position svg:first-child {
+  margin-right: 5px;
+}
+.email-adress-position li {
+  display: flex;
+  align-items: center;
+}
 main .dark-background {
   display: flex;
   flex-direction: column;
@@ -245,6 +252,7 @@ h1 {
   letter-spacing: 0.06em;
   color: #ffffff;
   font-family: inherit;
+  border: 0;
 }
 
 address {
@@ -301,13 +309,17 @@ button:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-
+.portfolio-photos a:hover {
+  color: inherit;
+}
+.portfolio-photos a:visited {
+  color: inherit;
+}
 .portfolio-card-text {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   margin: 20px 24px;
-  cursor: pointer;
 }
 
 .container {
