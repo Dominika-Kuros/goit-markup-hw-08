@@ -114,16 +114,20 @@ li {
   gap: 50px;
 }
 
-.email-adress-position a:hover,
 .email-adress-position li:hover {
   stroke: var(--primary-color);
+  cursor: pointer;
 }
-.email-adress-position svg:first-child {
+/* .email-adress-position svg {
   margin-right: 5px;
+} */
+.email-adress-position li:hover a {
+  color: var(--primary-color);
 }
 .email-adress-position li {
   display: flex;
   align-items: center;
+  gap: 5px;
 }
 main .dark-background {
   display: flex;
