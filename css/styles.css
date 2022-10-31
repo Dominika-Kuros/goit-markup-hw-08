@@ -40,6 +40,22 @@ a:visited {
 
 a:hover {
   color: var(--primary-color);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+.portfolio-underline{ position:relative;}
+
+.portfolio-underline::after{
+  position: absolute;
+
+content: "";
+width:53px;
+height:4px;
+background-color:var(--primary-color);
+margin-top: 37px;
+left:0;
+
+
 }
 .agencja {
   font-weight: 500;
@@ -86,6 +102,8 @@ a:hover {
 } */
 .color:hover {
   stroke: var(--primary-color);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 ul {
@@ -117,6 +135,8 @@ li {
 .email-adress-position li:hover {
   stroke: var(--primary-color);
   cursor: pointer;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 /* .email-adress-position svg {
   margin-right: 5px;
@@ -167,7 +187,29 @@ h1 {
   align-items: flex-start;
   justify-content: space-between;
   gap: 30px;
+  
 }
+.what-we-do-list li{
+position: relative;
+}
+
+.description-box-what-we-do-text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  position: absolute;
+Font size: 14px;
+Line height: 1,6;
+color:white;
+position: relative;
+  background-color:rgba(47, 48, 58, 0.8);
+  width:370px;
+height:70px;
+z-index: 1;
+}
+
+
 
 .what-we-do-title {
   font-weight: 700;
@@ -286,6 +328,8 @@ button:hover {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 button:focus {
   color: white;
@@ -293,6 +337,8 @@ button:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .portfolio-photos {
@@ -312,9 +358,13 @@ button:focus {
 .portfolio-photos li:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 .portfolio-photos a:hover {
   color: inherit;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 .portfolio-photos a:visited {
   color: inherit;
@@ -368,6 +418,7 @@ button:focus {
 .icon:hover {
   --color3: var(--primary-color);
   --color1: white;
+transition: currentColor, 250ms, cubic-bezier(0.4, 0, 0.2, 1);
 }
 .our-client-title {
   font-weight: 700;
@@ -387,6 +438,8 @@ button:focus {
 
 .icon-clients:hover {
   fill: var(--primary-color);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .footer-social-media-box {
@@ -402,6 +455,8 @@ button:focus {
 .footer-social-media-icon:hover {
   background-color: #2196f3;
   border-radius: 50px;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 .dolacz {
   font-weight: 700;
