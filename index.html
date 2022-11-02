@@ -55,7 +55,9 @@
       <section class="dark-background container-bg-photo section">
         <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
 
-        <button type="button" class="button">Zamów usługę</button>
+        <button type="button" class="button" data-modal-open>
+          Zamów usługę
+        </button>
       </section>
 
       <section class="section">
@@ -169,23 +171,23 @@
               <h4>John Doe</h4>
               Product Designer
               <div class="social-media-box">
-                <a href=""class= "circle">
-                  <svg class="icon" width="20" height="20">
+                <a href="" class="circle">
+                  <svg class="icon" width="44" height="44">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
                 <a href="">
-                  <svg class="icon" width="20" height="20">
+                  <svg class="icon" width="44" height="44">
                     <use href="./images/icons.svg#icon-twitter"></use>
                   </svg>
                 </a>
                 <a href="">
-                  <svg class="icon" width="20" height="20">
+                  <svg class="icon" width="44" height="44">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
                 <a href="">
-                  <svg class="icon" width="20" height="20">
+                  <svg class="icon" width="44" height="44">
                     <use href="./images/icons.svg#icon-linkedin"></use>
                   </svg>
                 </a>
@@ -204,22 +206,22 @@
               Frontend Developer
               <div class="social-media-box">
                 <a href="">
-                  <svg class="icon" width="20" height="20">
+                  <svg class="icon" width="44" height="44">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
                 <a href="">
-                  <svg class="icon" width="20" height="20">
+                  <svg class="icon" width="44" height="44">
                     <use href="./images/icons.svg#icon-twitter"></use>
                   </svg>
                 </a>
                 <a href="">
-                  <svg class="icon" width="20" height="20">
+                  <svg class="icon" width="44" height="44">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
                 <a href="">
-                  <svg class="icon" width="20" height="20">
+                  <svg class="icon" width="44" height="44">
                     <use href="./images/icons.svg#icon-linkedin"></use>
                   </svg>
                 </a>
@@ -239,22 +241,22 @@
 
               <div class="social-media-box">
                 <a href="">
-                  <svg class="icon" width="20" height="20">
+                  <svg class="icon" width="44" height="44">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
                 <a href="">
-                  <svg class="icon" width="20" height="20">
+                  <svg class="icon" width="44" height="44">
                     <use href="./images/icons.svg#icon-twitter"></use>
                   </svg>
                 </a>
                 <a href="">
-                  <svg class="icon" width="20" height="20">
+                  <svg class="icon" width="44" height="44">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
                 <a href="">
-                  <svg class="icon" width="20" height="20">
+                  <svg class="icon" width="44" height="44">
                     <use href="./images/icons.svg#icon-linkedin"></use>
                   </svg>
                 </a>
@@ -274,22 +276,22 @@
 
               <div class="social-media-box">
                 <a href="">
-                  <svg class="icon" width="20" height="20">
+                  <svg class="icon" width="44" height="44">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
                 <a href="">
-                  <svg class="icon" width="20" height="20">
+                  <svg class="icon" width="44" height="44">
                     <use href="./images/icons.svg#icon-twitter"></use>
                   </svg>
                 </a>
                 <a href="">
-                  <svg class="icon" width="20" height="20">
+                  <svg class="icon" width="44" height="44">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
                 <a href="">
-                  <svg class="icon" width="20" height="20">
+                  <svg class="icon" width="44" height="44">
                     <use href="./images/icons.svg#icon-linkedin"></use>
                   </svg>
                 </a>
@@ -418,5 +420,20 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>
+          <svg>
+            <use
+              href="./images/icons.svg#icon-close"
+              width="11"
+              height="11"
+            ></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
