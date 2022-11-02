@@ -516,10 +516,11 @@ button:focus {
   gap: 10px;
 }
 .icon-clients {
-  fill: var(--clients-color);
+  fill: var(--color3);
+  
 }
 .icon-clients:hover {
-  --clients-color: var(--primary-color);
+ fill: var(--primary-color);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
 }
@@ -532,6 +533,8 @@ button:focus {
   justify-content: center;
   align-items: center;
   border-radius: 4px;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .border-clients-icons:hover {
@@ -582,5 +585,12 @@ button:focus {
   display: flex;
   justify-content: center;
   align-items: center;
+  
+
+}
+
+.close-btn:hover {
+  background: none;
+  border-radius: 50%;
 }
 /* ========== END BACKDROP MODAL =========== */
