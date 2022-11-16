@@ -460,7 +460,7 @@
           <form>
             <h3 class="modal-title">Zostaw swoje dane w formularzu poniżej</h3>
             <fieldset class="modal-form">
-              <label for="imie" class="modal-label"> Imię</label>
+              <label for="username" class="modal-label"> Imię</label>
               <svg
                 class="modal-icon"
                 width="18"
@@ -474,12 +474,12 @@
                 type="text"
                 class="modal-input"
                 name="username"
-                id="usermane"
+                id="username"
               />
             </fieldset>
 
             <fieldset class="modal-form">
-              <label for="telefon" class="modal-label">Telefon</label>
+              <label for="phone" class="modal-label">Telefon</label>
               <svg
                 class="modal-icon"
                 width="18"
@@ -507,7 +507,7 @@
             </fieldset>
 
             <fieldset class="modal-form">
-              <label for="komentarz" class="modal-label">Komentarz</label>
+              <label for="comment" class="modal-label">Komentarz</label>
               <div class="modal-input-comment">
                 <textarea
                   class="textarea"
@@ -520,6 +520,7 @@
             </fieldset>
 
             <fieldset class="modal-checkbox-fieldset">
+              <label class="checkbox-label">
               <input type="checkbox" name="rodo" id="rodo" class="checkbox" />
               <span class="checkbox-icon-custom"></span>
               <svg width="11" height="8" class="checkbox-icon">
@@ -531,6 +532,7 @@
                 i
                 <a href="#">Politykę Prywatności</a>
               </div>
+              </label>
             </fieldset>
             <button class="modal-form-button" type="submit">Wyślij</button>
           </form>
