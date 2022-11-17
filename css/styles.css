@@ -716,18 +716,23 @@ button:focus {
   transition-duration: 250ms;
 }
 
-.modal-input-comment {
+.modal-comment {
   border: 1px solid rgba(33, 33, 33, 0.2);
   height: 120px;
   width: 448px;
   border-radius: 4px;
-  transition-property: border;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
-  position: relative;
 }
+
+.modal-comment:focus {
+  border-color: var(--primary-color);
+  outline: 0;
+}
+.modal-comment:has(textarea:focus) {
+  border: 1px var(--primary-color) solid;
+}
+
 .textarea {
-  margin-top:2px;
+  margin-top: 2px;
   position: absolute;
   width: 416px;
   height: 96px;
@@ -735,12 +740,10 @@ button:focus {
   border: 0;
   padding-top: 12px;
   padding-left: 16px;
-  
 }
-.textarea:focus{
+.textarea:focus {
   outline: 0;
   border: 0;
-  
 }
 .textarea::placeholder {
   font-weight: 400;
@@ -751,13 +754,7 @@ button:focus {
   margin-bottom: 20px;
 }
 
-.modal-input-comment:focus {
-  border: var(--primary-color);
-  outline: 0;
- 
-}
-
-.modal-label:has(input:focus) .modal-icon {
+.modal-form:has(input:focus) .modal-icon {
   fill: var(--primary-color);
 }
 
