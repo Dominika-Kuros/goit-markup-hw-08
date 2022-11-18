@@ -157,7 +157,7 @@ li {
 .header-svg:hover {
   --contacts-color: var(--primary-color);
 }
-.header-svg:hover .email-adress-position {
+.email-adress-position:hover .header-svg  {
   --contacts-color: var(--primary-color);
 }
 .email-adress-position li {
@@ -721,13 +721,14 @@ button:focus {
   height: 120px;
   width: 448px;
   border-radius: 4px;
+  
 }
 
 .modal-comment:focus {
   border-color: var(--primary-color);
   outline: 0;
 }
-.modal-comment:has(textarea:focus) {
+.modal-comment:has(textarea:focus){
   border: 1px var(--primary-color) solid;
 }
 
@@ -754,7 +755,9 @@ button:focus {
   margin-bottom: 20px;
 }
 
-.modal-form:has(input:focus) .modal-icon {
+
+
+.modal-form:has(input:focus) .modal-icon{
   fill: var(--primary-color);
 }
 
