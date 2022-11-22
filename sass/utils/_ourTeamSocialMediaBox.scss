@@ -1,0 +1,19 @@
+.OurTeam__socialMediaBox {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.OurTeam__socialMediaBox--icon {
+  fill: var(--clients-color);
+  border-radius: 50%;
+  transition-property: color, background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+
+.OurTeam__socialMediaBox--icon:hover {
+  --color1: var(--white-color);
+  background-color: var(--primary-color);
+}

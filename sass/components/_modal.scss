@@ -1,0 +1,30 @@
+.modal {
+  width: 528px;
+  height: 581px;
+  background-color: #fff;
+  margin: auto;
+}
+
+.modal__close-btn {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 490px;
+  margin-top: 8px;
+  position: relative;
+}
+
+.modal__close-btn svg {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+}
+
+.modal__close-btn:hover {
+  background: none;
+  border-radius: 50%;
+  box-shadow: none;
+}

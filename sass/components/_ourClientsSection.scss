@@ -1,0 +1,39 @@
+.OurClients__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 0.42;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+  padding-bottom: 50px;
+}
+.OurClients__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.OurClients__icon {
+  fill: var(--clients-color);
+  transition-property: fill;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+
+.OurClients__icon--border {
+  width: 170px;
+  height: 90px;
+  display: flex;
+  border: 1px solid;
+  color: var(--clients-color);
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  transition-property: fill;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+
+.OurClients__icon--border:hover .OurClients__icon {
+  fill: var(--primary-color);
+}

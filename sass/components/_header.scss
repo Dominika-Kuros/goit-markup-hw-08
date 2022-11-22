@@ -1,0 +1,111 @@
+.header__logo {
+  width: 145px;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 0.31;
+  letter-spacing: 0.03em;
+}
+
+.header__logo--position {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.header {
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
+  display: flex;
+  justify-content: space-between;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 46px;
+  margin-right: 364px;
+}
+.header__nav--underline {
+  position: relative;
+}
+
+.header__nav--underline::after {
+  position: absolute;
+  content: "";
+  width: 53px;
+  height: 4px;
+  background-color: var(--primary-color);
+  margin-top: 37px;
+  left: 0;
+  width: 100%;
+}
+.header__nav--agencja {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 0.16;
+  letter-spacing: 0.02em;
+  color: var(--secondary-color);
+}
+
+.header__nav--contact {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 0.16;
+  letter-spacing: 0.02em;
+  color: var(--secondary-color);
+}
+.header__nav--portfolio {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 0.16;
+  letter-spacing: 0.02em;
+  color: var(--secondary-color);
+}
+
+.headerContacts__e-mail {
+  width: 135px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 0.16;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.headerContacts__ph-number {
+  width: 110px;
+  color: #757575;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 0.16;
+  letter-spacing: 0.02em;
+}
+
+.headerContacts {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  transition-property: fill;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+
+.headerContacts li:hover .headerContacts__icon {
+  fill: var(--primary-color);
+  cursor: pointer;
+}
+.headerContacts li:hover a {
+  color: var(--primary-color);
+}
+.headerContacts__icon {
+  fill: var(--contacts-color);
+  transition-property: fill;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+.headerContacts__icon:hover {
+  --contacts-color: var(--primary-color);
+}
+
+.headerContacts li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}

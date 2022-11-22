@@ -1,0 +1,37 @@
+.banner__button {
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  background: var(--primary-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 0.3;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  font-family: inherit;
+  border: 0;
+}
+
+main .banner__background {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/Img.jpg);
+  background-size: cover;
+  max-width: 1600px;
+}
+.banner__photo {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 15;
+}
