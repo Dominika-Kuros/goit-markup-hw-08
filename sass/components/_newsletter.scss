@@ -1,8 +1,9 @@
 .newsletter {
   display: inline-block;
+  margin-top: -30px;
 }
 
-.newsletter__input {
+&__input {
   padding: 15px;
   background-color: inherit;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -11,7 +12,7 @@
   width: 358px;
   color: rgba(255, 255, 255, 0.6);
 }
-.newsletter__button {
+&__button {
   color: var(--white-color);
   background-color: var(--primary-color);
   margin: 0;
@@ -27,7 +28,7 @@
   border: 0;
   cursor: pointer;
 }
-.newsletter__input::placeholder {
+&__input::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -35,7 +36,7 @@
   height: 50px;
   color: rgba(255, 255, 255, 0.6);
 }
-.newsletter__icon {
+&__icon {
   fill: white;
   margin-left: 24px;
 }

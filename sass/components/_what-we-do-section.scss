@@ -1,14 +1,11 @@
-.whatWeDo__list {
+.what-we-do {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   gap: 30px;
 }
-.whatWeDo__list li {
-  position: relative;
-}
 
-.whatWeDo__description {
+&__description {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,12 +20,16 @@
   bottom: 0;
 }
 
-.whatWeDo__title {
+&__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 0.42;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
-  padding-bottom: 50px;
-}
+  padding-bottom: 50px;}
+
+  &__list li {
+    position: relative;
+  }
+

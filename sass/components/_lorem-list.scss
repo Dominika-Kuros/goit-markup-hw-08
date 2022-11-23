@@ -1,10 +1,11 @@
-.loremIpsumWrapper li {
+.lorem-ipsum__wrapper li {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.loremIpsumWrapper__iconElement {
+
+.lorem-ipsum__wrapper--icon-element {
   display: flex;
   background: #f5f4fa;
   width: 270px;

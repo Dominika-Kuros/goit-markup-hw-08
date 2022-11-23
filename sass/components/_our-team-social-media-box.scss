@@ -1,11 +1,11 @@
-.OurTeam__socialMediaBox {
+.our-team__social-media-box {
   margin-top: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
 }
-.OurTeam__socialMediaBox--icon {
+.our-team__social-media-box--icon {
   fill: var(--clients-color);
   border-radius: 50%;
   transition-property: color, background-color;
@@ -13,7 +13,7 @@
   transition-duration: 250ms;
 }
 
-.OurTeam__socialMediaBox--icon:hover {
+.our-team__social-media-box--icon:hover {
   --color1: var(--white-color);
   background-color: var(--primary-color);
 }

@@ -1,4 +1,5 @@
-.OurClients__title {
+.our-clients{
+&__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 0.42;
@@ -7,20 +8,20 @@
   color: var(--secondary-color);
   padding-bottom: 50px;
 }
-.OurClients__wrapper {
+&__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 10px;
 }
-.OurClients__icon {
+&__icon {
   fill: var(--clients-color);
   transition-property: fill;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
 }
 
-.OurClients__icon--border {
+&__icon--border {
   width: 170px;
   height: 90px;
   display: flex;
@@ -34,6 +35,7 @@
   transition-duration: 250ms;
 }
 
-.OurClients__icon--border:hover .OurClients__icon {
+&__icon--border:hover &__icon {
   fill: var(--primary-color);
+}
 }

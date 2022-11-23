@@ -21,21 +21,19 @@
   <body>
     <div class="container">
       <header class="header">
-        <a href="index.html" class="header__logo header__logo--position">
+        <a href="index.html" class="header__logo">
           <span class="logo__blue">Web</span
           ><span class="logo__black">Studio</span>
         </a>
         <nav>
           <ul class="header__nav">
             <li>
-              <a
-                href="index.html"
-                class="header__nav--agencja header__nav--underline"
-                >Agencja</a
-              >
+              <a href="index.html" class="header__nav--agencja">Agencja</a>
             </li>
             <li>
-              <a href="portfolio.html" class="header__nav--portfolio"
+              <a
+                href="portfolio.html"
+                class="header__nav--portfolio header__nav--underline"
                 >Portfolio</a
               >
             </li>
@@ -43,20 +41,20 @@
           </ul>
         </nav>
 
-        <ul class="headerContacts">
+        <ul class="header__contacts">
           <li>
-            <svg class="headerContacts__icon" width="20" height="16">
+            <svg class="header__contacts--icon" width="20" height="16">
               <use href="./images/icons.svg#icon-envelope"></use>
             </svg>
-            <a href="mailto:info@devstudio.com" class="headerContacts__e-mail"
+            <a href="mailto:info@devstudio.com" class="header__contacts--e-mail"
               >info@devstudio.com</a
             >
           </li>
           <li>
-            <svg class="headerContacts__icon" width="16" height="20">
+            <svg class="header__contacts--icon" width="16" height="20">
               <use href="./images/icons.svg#icon-smartphone"></use>
             </svg>
-            <a href="tel:+48111111111" class="headerContacts__ph-number">
+            <a href="tel:+48111111111" class="header__contacts--ph-number">
               +48 111 111 111</a
             >
           </li>
@@ -64,38 +62,42 @@
       </header>
     </div>
 
-    <div class="container">
-      <ul class="buttonList">
+    <div class="container buttons">
+      <ul class="button-list">
         <li>
-          <button type="button" class="buttonList__singleButton">
+          <button type="button" class="button-list__single-button">
             Wszystkie
           </button>
         </li>
         <li>
-          <button type="button" class="buttonList__singleButton">Strony</button>
+          <button type="button" class="button-list__single-button">
+            Strony
+          </button>
         </li>
         <li>
-          <button type="button" class="buttonList__singleButton">
+          <button type="button" class="button-list__single-button">
             Aplikacje
           </button>
         </li>
         <li>
-          <button type="button" class="buttonList__singleButton">Dizajn</button>
+          <button type="button" class="button-list__single-button">
+            Dizajn
+          </button>
         </li>
         <li>
-          <button type="button" class="buttonList__singleButton">
+          <button type="button" class="button-list__single-button">
             Marketing
           </button>
         </li>
       </ul>
     </div>
 
-    <section class="section">
+    <section class="section portfolio">
       <div class="container">
-        <ul class="portfolio">
+        <ul class="portfolio__list">
           <li>
             <div>
-              <div class="portfolio__list">
+              <div class="portfolio__card">
                 <a href="">
                   <img
                     src="./images/1.jpg"
@@ -126,7 +128,7 @@
 
           <li>
             <div>
-              <div class="portfolio__list">
+              <div class="portfolio__card">
                 <a href="">
                   <img
                     src="./images/2.jpg"
@@ -156,7 +158,7 @@
           </li>
           <li>
             <div>
-              <div class="portfolio__list">
+              <div class="portfolio__card">
                 <a href="">
                   <img
                     src="./images/3.jpg"
@@ -186,7 +188,7 @@
           </li>
           <li>
             <div>
-              <div class="portfolio__list">
+              <div class="portfolio__card">
                 <a href="">
                   <img
                     src="./images/4.jpg"
@@ -216,7 +218,7 @@
           </li>
           <li>
             <div>
-              <div class="portfolio__list">
+              <div class="portfolio__card">
                 <a href="">
                   <img
                     src="./images/5.jpg"
@@ -246,7 +248,7 @@
           </li>
           <li>
             <div>
-              <div class="portfolio__list">
+              <div class="portfolio__card">
                 <a href="">
                   <img
                     src="./images/6.jpg"
@@ -276,7 +278,7 @@
           </li>
           <li>
             <div>
-              <div class="portfolio__list">
+              <div class="portfolio__card">
                 <a href="">
                   <img
                     src="./images/7.jpg"
@@ -306,7 +308,7 @@
           </li>
           <li>
             <div>
-              <div class="portfolio__list">
+              <div class="portfolio__card">
                 <a href="">
                   <img
                     src="./images/8.jpg"
@@ -336,7 +338,7 @@
           </li>
           <li>
             <div>
-              <div class="portfolio__list">
+              <div class="portfolio__card">
                 <a href="">
                   <img
                     src="./images/9.jpg"
@@ -368,7 +370,7 @@
       </div>
     </section>
 
-    <footer class="footerBackground section">
+    <footer class="footer__background section">
       <div class="container">
         <div class="footer">
           <div>
@@ -394,25 +396,41 @@
               </li>
             </ul>
           </div>
-          <div class="footer__SocialMediaBox">
+          <div class="footer__social-media-box">
             <h5>DOŁĄCZ DO NAS</h5>
             <a href="">
-              <svg class="footer__SocialMediaBox--icon" width="44" height="44">
+              <svg
+                class="footer__social-media-box--icon"
+                width="44"
+                height="44"
+              >
                 <use href="./images/icons.svg#icon-instagram-footer"></use>
               </svg>
             </a>
             <a href="">
-              <svg class="footer__SocialMediaBox--icon" width="44" height="44">
+              <svg
+                class="footer__social-media-box--icon"
+                width="44"
+                height="44"
+              >
                 <use href="./images/icons.svg#icon-twitter-footer"></use>
               </svg>
             </a>
             <a href="">
-              <svg class="footer__SocialMediaBox--icon" width="44" height="44">
+              <svg
+                class="footer__social-media-box--icon"
+                width="44"
+                height="44"
+              >
                 <use href="./images/icons.svg#icon-facebook-footer"></use>
               </svg>
             </a>
             <a href="">
-              <svg class="footer__SocialMediaBox--icon" width="44" height="44">
+              <svg
+                class="footer__social-media-box--icon"
+                width="44"
+                height="44"
+              >
                 <use href="./images/icons.svg#icon-linkedin-footer"></use>
               </svg>
             </a>

@@ -21,7 +21,7 @@
   <body>
     <div class="container">
       <header class="header">
-        <a href="index.html" class="header__logo header__logo--position">
+        <a href="index.html" class="header__logo">
           <span class="logo__blue">Web</span
           ><span class="logo__black">Studio</span>
         </a>
@@ -43,20 +43,20 @@
           </ul>
         </nav>
 
-        <ul class="headerContacts">
+        <ul class="header__contacts">
           <li>
-            <svg class="headerContacts__icon" width="20" height="16">
+            <svg class="header__contacts--icon" width="20" height="16">
               <use href="./images/icons.svg#icon-envelope"></use>
             </svg>
-            <a href="mailto:info@devstudio.com" class="headerContacts__e-mail"
+            <a href="mailto:info@devstudio.com" class="header__contacts--e-mail"
               >info@devstudio.com</a
             >
           </li>
           <li>
-            <svg class="headerContacts__icon" width="16" height="20">
+            <svg class="header__contacts--icon" width="16" height="20">
               <use href="./images/icons.svg#icon-smartphone"></use>
             </svg>
-            <a href="tel:+48111111111" class="headerContacts__ph-number">
+            <a href="tel:+48111111111" class="header__contacts--ph-number">
               +48 111 111 111</a
             >
           </li>
@@ -64,7 +64,7 @@
       </header>
     </div>
     <main>
-      <section class="banner__background banner__photo section">
+      <section class="banner__background banner__background--photo section">
         <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
 
         <button type="button" class="banner__button" data-modal-open>
@@ -72,11 +72,11 @@
         </button>
       </section>
 
-      <section class="section">
-        <div class="container loremIpsumWrapper">
+      <section class="section lorem-ipsum">
+        <div class="container lorem-ipsum__wrapper">
           <ul>
             <li>
-              <div class="loremIpsumWrapper__iconElement">
+              <div class="lorem-ipsum__wrapper--icon-element">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
@@ -89,7 +89,7 @@
             </li>
 
             <li>
-              <div class="loremIpsumWrapper__iconElement">
+              <div class="lorem-ipsum__wrapper--icon-element">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
@@ -102,7 +102,7 @@
             </li>
 
             <li>
-              <div class="loremIpsumWrapper__iconElement">
+              <div class="lorem-ipsum__wrapper--icon-element">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
@@ -115,7 +115,7 @@
             </li>
 
             <li>
-              <div class="loremIpsumWrapper__iconElement">
+              <div class="lorem-ipsum__wrapper--icon-element">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
@@ -130,9 +130,9 @@
         </div>
       </section>
 
-      <div class="container">
-        <h2 class="whatWeDo__title">Czym się zajmujemy</h2>
-        <ul class="whatWeDo__list">
+      <div class="container what-we-do">
+        <h2 class="what-we-do__title">Czym się zajmujemy</h2>
+        <ul class="what-we-do__list">
           <li>
             <img
               src="./images/img(2).jpg"
@@ -140,7 +140,7 @@
               width="370"
               height="294"
             />
-            <div class="whatWeDo__description">APLIKACJE KOMPUTEROWE</div>
+            <div class="what-we-do__description">APLIKACJE KOMPUTEROWE</div>
           </li>
           <li>
             <img
@@ -149,7 +149,7 @@
               width="370"
               height="294"
             />
-            <div class="whatWeDo__description">APLIKACJE MOBLINE</div>
+            <div class="what-we-do__description">APLIKACJE MOBLINE</div>
           </li>
           <li>
             <img
@@ -158,16 +158,16 @@
               width="370"
               height="294"
             />
-            <div class="whatWeDo__description">ROZWIĄZANIA GRAFICZNE</div>
+            <div class="what-we-do__description">ROZWIĄZANIA GRAFICZNE</div>
           </li>
         </ul>
       </div>
 
-      <section class="section ourTeam__background">
+      <section class="section our-team">
         <div class="container">
-          <h2 class="ourTeam__title">Nasz zespół</h2>
+          <h2 class="our-team__title">Nasz zespół</h2>
 
-          <ul class="ourTeam__cardBackground ourTeam__cardList">
+          <ul class="our-team__card--background our-team__card--list">
             <li>
               <img
                 src="./images/Product.jpg"
@@ -178,24 +178,40 @@
 
               <h4>John Doe</h4>
               Product Designer
-              <div class="OurTeam__socialMediaBox">
+              <div class="our-team__social-media-box">
                 <a href="" class="circle">
-                  <svg class="OurTeam__socialMediaBox--icon" width="44" height="44">
+                  <svg
+                    class="our-team__social-media-box--icon"
+                    width="44"
+                    height="44"
+                  >
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
                 <a href="">
-                  <svg class="OurTeam__socialMediaBox--icon" width="44" height="44">
+                  <svg
+                    class="our-team__social-media-box--icon"
+                    width="44"
+                    height="44"
+                  >
                     <use href="./images/icons.svg#icon-twitter"></use>
                   </svg>
                 </a>
                 <a href="">
-                  <svg class="OurTeam__socialMediaBox--icon" width="44" height="44">
+                  <svg
+                    class="our-team__social-media-box--icon"
+                    width="44"
+                    height="44"
+                  >
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
                 <a href="">
-                  <svg class="OurTeam__socialMediaBox--icon" width="44" height="44">
+                  <svg
+                    class="our-team__social-media-box--icon"
+                    width="44"
+                    height="44"
+                  >
                     <use href="./images/icons.svg#icon-linkedin"></use>
                   </svg>
                 </a>
@@ -212,10 +228,10 @@
 
               <h4>John Doe</h4>
               Frontend Developer
-              <div class="OurTeam__socialMediaBox">
+              <div class="our-team__social-media-box">
                 <a href="">
                   <svg
-                    class="OurTeam__socialMediaBox--icon"
+                    class="our-team__social-media-box--icon"
                     width="44"
                     height="44"
                   >
@@ -224,7 +240,7 @@
                 </a>
                 <a href="">
                   <svg
-                    class="OurTeam__socialMediaBox--icon"
+                    class="our-team__social-media-box--icon"
                     width="44"
                     height="44"
                   >
@@ -233,7 +249,7 @@
                 </a>
                 <a href="">
                   <svg
-                    class="OurTeam__socialMediaBox--icon"
+                    class="our-team__social-media-box--icon"
                     width="44"
                     height="44"
                   >
@@ -242,7 +258,7 @@
                 </a>
                 <a href="">
                   <svg
-                    class="OurTeam__socialMediaBox--icon"
+                    class="our-team__social-media-box--icon"
                     width="44"
                     height="44"
                   >
@@ -263,24 +279,40 @@
               <h4>John Doe</h4>
               Marketing
 
-              <div class="OurTeam__socialMediaBox">
+              <div class="our-team__social-media-box">
                 <a href="">
-                  <svg class="OurTeam__socialMediaBox--icon" width="44" height="44">
+                  <svg
+                    class="our-team__social-media-box--icon"
+                    width="44"
+                    height="44"
+                  >
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
                 <a href="">
-                  <svg class="OurTeam__socialMediaBox--icon" width="44" height="44">
+                  <svg
+                    class="our-team__social-media-box--icon"
+                    width="44"
+                    height="44"
+                  >
                     <use href="./images/icons.svg#icon-twitter"></use>
                   </svg>
                 </a>
                 <a href="">
-                  <svg class="OurTeam__socialMediaBox--icon" width="44" height="44">
+                  <svg
+                    class="our-team__social-media-box--icon"
+                    width="44"
+                    height="44"
+                  >
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
                 <a href="">
-                  <svg class="OurTeam__socialMediaBox--icon" width="44" height="44">
+                  <svg
+                    class="our-team__social-media-box--icon"
+                    width="44"
+                    height="44"
+                  >
                     <use href="./images/icons.svg#icon-linkedin"></use>
                   </svg>
                 </a>
@@ -298,24 +330,40 @@
               <h4>John Doe</h4>
               UI Designer
 
-              <div class="OurTeam__socialMediaBox">
+              <div class="our-team__social-media-box">
                 <a href="">
-                  <svg class="OurTeam__socialMediaBox--icon" width="44" height="44">
+                  <svg
+                    class="our-team__social-media-box--icon"
+                    width="44"
+                    height="44"
+                  >
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
                 <a href="">
-                  <svg class="OurTeam__socialMediaBox--icon" width="44" height="44">
+                  <svg
+                    class="our-team__social-media-box--icon"
+                    width="44"
+                    height="44"
+                  >
                     <use href="./images/icons.svg#icon-twitter"></use>
                   </svg>
                 </a>
                 <a href="">
-                  <svg class="OurTeam__socialMediaBox--icon" width="44" height="44">
+                  <svg
+                    class="our-team__social-media-box--icon"
+                    width="44"
+                    height="44"
+                  >
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
                 <a href="">
-                  <svg class="OurTeam__socialMediaBox--icon" width="44" height="44">
+                  <svg
+                    class="our-team__social-media-box--icon"
+                    width="44"
+                    height="44"
+                  >
                     <use href="./images/icons.svg#icon-linkedin"></use>
                   </svg>
                 </a>
@@ -324,13 +372,13 @@
           </ul>
         </div>
       </section>
-      <section class="section">
+      <section class="section our-clients">
         <div class="container">
-          <h2 class="OurClients__title">Nasi klienci</h2>
-          <div class="OurClients__wrapper">
-            <a href="" class="OurClients__icon--border">
+          <h2 class="our-clients__title">Nasi klienci</h2>
+          <div class="our-clients__wrapper">
+            <a href="" class="our-clients__icon--border">
               <svg
-                class="OurClients__icon"
+                class="our-clients__icon"
                 width="106"
                 height="60"
                 viewBox="0 0 27 32"
@@ -338,9 +386,9 @@
                 <use href="./images/icons.svg#icon-client-1"></use>
               </svg>
             </a>
-            <a href="" class="OurClients__icon--border">
+            <a href="" class="our-clients__icon--border">
               <svg
-                class="OurClients__icon"
+                class="our-clients__icon"
                 width="106"
                 height="60"
                 viewBox="0 0 65 32"
@@ -348,9 +396,9 @@
                 <use href="./images/icons.svg#icon-client-2"></use>
               </svg>
             </a>
-            <a href="" class="OurClients__icon--border">
+            <a href="" class="our-clients__icon--border">
               <svg
-                class="OurClients__icon"
+                class="our-clients__icon"
                 width="106"
                 height="60"
                 viewBox="0 0 170 92"
@@ -358,9 +406,9 @@
                 <use href="./images/icons.svg#icon-client-3"></use>
               </svg>
             </a>
-            <a href="" class="OurClients__icon--border">
+            <a href="" class="our-clients__icon--border">
               <svg
-                class="OurClients__icon"
+                class="our-clients__icon"
                 width="106"
                 height="60"
                 viewBox="0 0 65 32"
@@ -368,9 +416,9 @@
                 <use href="./images/icons.svg#icon-client-4"></use>
               </svg>
             </a>
-            <a href="" class="OurClients__icon--border">
+            <a href="" class="our-clients__icon--border">
               <svg
-                class="OurClients__icon"
+                class="our-clients__icon"
                 width="106"
                 height="60"
                 viewBox="0 0 43 32"
@@ -378,9 +426,9 @@
                 <use href="./images/icons.svg#icon-client-5"></use>
               </svg>
             </a>
-            <a href="" class="OurClients__icon--border">
+            <a href="" class="our-clients__icon--border">
               <svg
-                class="OurClients__icon"
+                class="our-clients__icon"
                 width="106"
                 height="60"
                 viewBox="0 0 67 32"
@@ -392,7 +440,7 @@
         </div>
       </section>
     </main>
-    <footer class="footerBackground section">
+    <footer class="footer__background section">
       <div class="container">
         <div class="footer">
           <div>
@@ -418,25 +466,41 @@
               </li>
             </ul>
           </div>
-          <div class="footer__SocialMediaBox">
+          <div class="footer__social-media-box">
             <h5>DOŁĄCZ DO NAS</h5>
             <a href="">
-              <svg class="footer__SocialMediaBox--icon" width="44" height="44">
+              <svg
+                class="footer__social-media-box--icon"
+                width="44"
+                height="44"
+              >
                 <use href="./images/icons.svg#icon-instagram-footer"></use>
               </svg>
             </a>
             <a href="">
-              <svg class="footer__SocialMediaBox--icon" width="44" height="44">
+              <svg
+                class="footer__social-media-box--icon"
+                width="44"
+                height="44"
+              >
                 <use href="./images/icons.svg#icon-twitter-footer"></use>
               </svg>
             </a>
             <a href="">
-              <svg class="footer__SocialMediaBox--icon" width="44" height="44">
+              <svg
+                class="footer__social-media-box--icon"
+                width="44"
+                height="44"
+              >
                 <use href="./images/icons.svg#icon-facebook-footer"></use>
               </svg>
             </a>
             <a href="">
-              <svg class="footer__SocialMediaBox--icon" width="44" height="44">
+              <svg
+                class="footer__social-media-box--icon"
+                width="44"
+                height="44"
+              >
                 <use href="./images/icons.svg#icon-linkedin-footer"></use>
               </svg>
             </a>
@@ -481,7 +545,7 @@
           </svg>
         </button>
         <div>
-          <form>
+          <form class="form">
             <h3 class="form__title">Zostaw swoje dane w formularzu poniżej</h3>
             <fieldset class="form__fieldset">
               <label for="username" class="form__fieldset--label"> Imię</label>
@@ -513,7 +577,12 @@
                 <use href="./images/icons.svg#icon-phone-form"></use>
               </svg>
 
-              <input type="phone" class="form__fieldset--input" name="phone" id="phone" />
+              <input
+                type="phone"
+                class="form__fieldset--input"
+                name="phone"
+                id="phone"
+              />
             </fieldset>
 
             <fieldset class="form__fieldset">
@@ -527,11 +596,18 @@
                 <use href="./images/icons.svg#icon-mail-form"></use>
               </svg>
 
-              <input type="email" class="form__fieldset--input" name="email" id="email" />
+              <input
+                type="email"
+                class="form__fieldset--input"
+                name="email"
+                id="email"
+              />
             </fieldset>
 
             <fieldset class="form__fieldset">
-              <label for="comment" class="form__fieldset--label">Komentarz</label>
+              <label for="comment" class="form__fieldset--label"
+                >Komentarz</label
+              >
               <div class="form__fieldset--comment">
                 <textarea
                   class="form__fieldset--textarea"
@@ -543,14 +619,23 @@
               </div>
             </fieldset>
 
-            <fieldset class="formFieldset__checkbox">
+            <fieldset class="form__fieldset--checkbox">
               <label>
-                <input type="checkbox" name="rodo" id="rodo" class="formFieldset__checkbox--input" />
-                <span class="formFieldset__checkbox--iconCustom"></span>
-                <svg width="11" height="8" class="formFieldset__checkbox--icon">
+                <input
+                  type="checkbox"
+                  name="rodo"
+                  id="rodo"
+                  class="form__fieldset--checkbox-input"
+                />
+                <span class="form__fieldset--checkbox-icon-custom"></span>
+                <svg
+                  width="11"
+                  height="8"
+                  class="form__fieldset--checkbox-icon"
+                >
                   <use href="./images/icons.svg#icon-check-rodo"></use>
                 </svg>
-                <div class="formFieldset__checkbox--text">
+                <div class="form__fieldset--checkbox-text">
                   Oświadczam iż akceptuję
                   <a href="#">Regulamin</a>
                   i
@@ -558,7 +643,7 @@
                 </div>
               </label>
             </fieldset>
-            <button class="formFieldset__button" type="submit">Wyślij</button>
+            <button class="form__fieldset--button" type="submit">Wyślij</button>
           </form>
         </div>
       </div>

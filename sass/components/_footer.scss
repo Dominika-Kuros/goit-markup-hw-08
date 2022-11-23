@@ -1,9 +1,16 @@
-.footerBackground {
+.footer {
+  display: flex;
+  align-items: flex-start;
+  gap: 70px;
+  margin-top: -30px;
+}
+
+&__background {
   left: 0px;
   background: #2f303a;
 }
 
-.footer__address {
+&__address {
   display: contents;
   color: white;
   font-family: "Roboto", serif;
@@ -13,7 +20,7 @@
   padding: 0;
 }
 
-.footer__logo {
+&__logo {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -22,15 +29,15 @@
   letter-spacing: 0.03em;
 }
 
-.footer__logo--position {
+&__logo--position {
   padding-bottom: 20px;
 }
 
-.footer__address--color {
+&__address--color {
   color: #757575;
 }
 
-.footer__SocialMediaBox {
+&__social-media-box {
   padding-bottom: 172px;
   display: inline-block;
   align-items: center;
@@ -38,24 +45,15 @@
   gap: 10px;
   width: 206px;
   height: 80px;
+  margin-top: -30px;
 }
-.footer__SocialMediaBox--icon {
+&__social-media-box--icon {
   background-color: #2f303a(--social-footer-color);
   transition-property: background-color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
 }
-.footer__SocialMediaBox--icon:hover {
+&__social-media-box--icon:hover {
   background-color: #2196f3;
   border-radius: 50px;
-}
-
-.footer {
-  display: flex;
-  align-items: flex-start;
-  gap: 70px;
-}
-.footer .newsletter,
-.footer__SocialMediaBox {
-  margin-top: -30px;
 }
