@@ -220,14 +220,13 @@ main .banner__background {
   max-width: 1600px;
 }
 main .banner__background--photo {
-  max-width: 100%;
   margin: 0 auto;
   padding: 0 15;
 }
 .our-team {
   background: #f5f4fa;
 }
-.our-team__card--list {
+.our-team__list {
   text-align: center;
   display: flex;
   justify-content: space-between;
@@ -241,7 +240,7 @@ main .banner__background--photo {
   color: var(--secondary-color);
   padding-bottom: 50px;
 }
-.our-team__card--background li {
+.our-team__background li {
   width: 270px;
   height: 428px;
   background: #fff;
@@ -270,7 +269,7 @@ main .banner__background--photo {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
 }
-.our-clients__icon--border {
+.our-clients__icon-container {
   width: 170px;
   height: 90px;
   display: flex;
@@ -283,7 +282,7 @@ main .banner__background--photo {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
 }
-.our-clients__icon--border:hover .our-clients__icon {
+.our-clients__icon-container:hover .our-clients__icon {
   fill: var(--primary-color);
 }
 .portfolio__list {

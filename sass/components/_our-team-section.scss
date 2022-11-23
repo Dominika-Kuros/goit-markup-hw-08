@@ -2,7 +2,7 @@
 background: #f5f4fa;
   
 
-  &__card--list {
+  &__list {
     text-align: center;
     display: flex;
     justify-content: space-between;
@@ -17,7 +17,7 @@ background: #f5f4fa;
     padding-bottom: 50px;
   }
 
-  &__card--background li {
+  &__background li {
     width: 270px;
     height: 428px;
     background: #ffffff;

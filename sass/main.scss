@@ -1,7 +1,3 @@
-@import "./utils/variables";
-@import "./utils/tags";
-@import "./utils/backdrop";
-
 @import "./components/header";
 @import "./components/main-banner";
 @import "./components/our-team-section";
@@ -15,3 +11,7 @@
 @import "./components/our-team-social-media-box";
 @import "./components/lorem-list";
 @import "./components/button-list";
+
+@import "./utils/variables";
+@import "./utils/tags";
+@import "./utils/backdrop";
