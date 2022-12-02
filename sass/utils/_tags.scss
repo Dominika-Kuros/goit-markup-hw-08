@@ -2,25 +2,29 @@ body {
   font-family: "Roboto", sans-serif;
   color: #757575;
 }
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 16 15 0;
+
+  @media screen and (min-width: 768px) {
+    max-width: 1200px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 15;
+  }
+}
 
 .section {
-  padding: 94px 0;
-}
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15;
-}
+  padding: 60px 0;
 
-h1 {
-  width: 696px;
-  font-family: "Roboto";
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: #ffffff;
+@media screen and (min-width: 1200px) {
+  
+    padding: 94px 0;
+  }
 }
 
 h4 {
@@ -40,7 +44,6 @@ address {
 }
 a {
   text-decoration: none;
-  transition-property: color;
   transition-property: color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;

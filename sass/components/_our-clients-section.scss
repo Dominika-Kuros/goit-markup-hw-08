@@ -1,41 +1,73 @@
-.our-clients{
-&__title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 0.42;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--secondary-color);
-  padding-bottom: 50px;
-}
-&__wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
-}
-&__icon {
-  fill: var(--clients-color);
-  transition-property: fill;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
-}
+.our-clients {
+  &__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 0.33;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--secondary-color);
+    padding-bottom: 50px;
 
-&__icon--border {
-  width: 170px;
-  height: 90px;
-  display: flex;
-  border: 1px solid;
-  color: var(--clients-color);
-  justify-content: center;
-  align-items: center;
-  border-radius: 4px;
-  transition-property: fill;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
-}
+    @media screen and (min-width: 1200px) {
+      font-size: 36px;
+      line-height: 0.42;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
 
-&__icon--border:hover &__icon {
-  fill: var(--primary-color);
-}
+     @media screen and (min-width: 768px) {
+      justify-content: center;
+      
+      
+    }
+    
+    @media screen and (min-width: 1200px) {
+      justify-content: center;
+    
+      
+    }
+  }
+
+  &__icon {
+    fill: var(--clients-color);
+    transition-property: fill;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+  }
+
+  &__icon-container {
+    width: 210px;
+    height: 92px;
+    display: flex;
+    border: 1px solid;
+    flex-basis: 210px;
+    color: var(--clients-color);
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    transition-property: fill;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+
+
+    @media screen and (min-width: 768px) {
+      width: 226px;
+      height: 92px;
+    }
+
+     @media screen and (min-width: 1200px) {
+      width: 170px;
+      height: 90px;
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__icon-container:hover &__icon {
+    fill: var(--primary-color);
+  }
 }
