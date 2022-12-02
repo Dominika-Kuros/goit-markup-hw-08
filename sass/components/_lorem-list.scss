@@ -6,7 +6,10 @@
   line-height: 1.46;
   letter-spacing: 0.03em;
   text-align: left;
+ 
   @media screen and (min-width: 768px) {
+  
+  
     }
     
   
@@ -19,6 +22,7 @@
   flex-basis: 354px;
   align-items: center;
   justify-content: center;
+  max-width: 100%;
 
   @media screen and (min-width: 768px) {
       
