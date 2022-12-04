@@ -18,18 +18,15 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap:30px;
+    gap: 30px;
 
-     @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) {
       justify-content: center;
-      
-      
     }
-    
+
     @media screen and (min-width: 1200px) {
-      justify-content: center;
-    
-      
+      max-width: 1600px;
+      flex-wrap: nowrap;
     }
   }
 
@@ -54,16 +51,14 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
 
-
     @media screen and (min-width: 768px) {
       width: 226px;
       height: 92px;
     }
 
-     @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
       width: 170px;
       height: 90px;
-      flex-wrap: nowrap;
     }
   }
 

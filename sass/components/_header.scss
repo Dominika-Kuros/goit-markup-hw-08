@@ -1,18 +1,14 @@
 .header {
-  border-bottom: 1px solid rgba(236, 236, 236, 1);
-  display: flex;
-  justify-content: space-between;
-
   &__logo {
-    width: 145px;
+    width: 134px;
     font-family: "Raleway";
     font-weight: 700;
-    font-size: 26px;
-    line-height: 0.31;
+    font-size: 24px;
+    line-height: 0.28;
     letter-spacing: 0.03em;
-    padding-top: 24px;
-    padding-bottom: 25px;
+    display: none;
   }
+
   &__nav {
     display: flex;
     justify-content: space-between;
@@ -56,7 +52,7 @@
     color: var(--secondary-color);
   }
 }
-&__contacts {
+.header__contacts {
   display: flex;
   justify-content: space-between;
   gap: 50px;
@@ -118,3 +114,124 @@
     gap: 5px;
   }
 }
+
+// .header {
+//   border-bottom: 1px solid rgba(236, 236, 236, 1);
+//   display: flex;
+//   justify-content: space-between;
+
+//   &__logo {
+//     width: 145px;
+//     font-family: "Raleway";
+//     font-weight: 700;
+//     font-size: 26px;
+//     line-height: 0.31;
+//     letter-spacing: 0.03em;
+//     padding-top: 24px;
+//     padding-bottom: 25px;
+//   }
+//   &__nav {
+//     display: flex;
+//     justify-content: space-between;
+//     gap: 46px;
+//     margin-right: 364px;
+//     display: none;
+//   }
+//   &--underline {
+//     position: relative;
+
+//     &::after {
+//       position: absolute;
+//       content: "";
+//       width: 53px;
+//       height: 4px;
+//       background-color: var(--primary-color);
+//       margin-top: 37px;
+//       left: 0;
+//       width: 100%;
+//     }
+//   }
+//   &--agencja {
+//     font-weight: 500;
+//     font-size: 14px;
+//     line-height: 0.16;
+//     letter-spacing: 0.02em;
+//     color: var(--secondary-color);
+//   }
+//   &--contact {
+//     font-weight: 500;
+//     font-size: 14px;
+//     line-height: 0.16;
+//     letter-spacing: 0.02em;
+//     color: var(--secondary-color);
+//   }
+//   &--portfolio {
+//     font-weight: 500;
+//     font-size: 14px;
+//     line-height: 0.16;
+//     letter-spacing: 0.02em;
+//     color: var(--secondary-color);
+//   }
+// }
+// .header__contacts {
+//   display: flex;
+//   justify-content: space-between;
+//   gap: 50px;
+//   transition-property: fill;
+//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//   transition-duration: 250ms;
+//   display: none;
+
+//   &--e-mail {
+//     width: 135px;
+//     font-weight: 500;
+//     font-size: 14px;
+//     line-height: 0.16;
+//     letter-spacing: 0.02em;
+//     color: #757575;
+//     fill: var(--primary-color);
+//     cursor: pointer;
+//     display: none;
+
+//     &:hover &--icon {
+//       fill: var(--primary-color);
+//       cursor: pointer;
+//     }
+//   }
+
+//   &--ph-number {
+//     width: 110px;
+//     color: #757575;
+//     font-weight: 500;
+//     font-size: 14px;
+//     line-height: 0.16;
+//     letter-spacing: 0.02em;
+//     display: none;
+
+//     &:hover &--icon {
+//       fill: var(--primary-color);
+//       cursor: pointer;
+//     }
+//   }
+
+//   & li:hover a {
+//     color: var(--primary-color);
+//   }
+//   &--icon {
+//     display: none;
+//     fill: var(--contacts-color);
+//     transition-property: fill;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//     transition-duration: 250ms;
+//     display: none;
+//     &:hover {
+//       --contacts-color: var(--primary-color);
+//     }
+//   }
+
+//   & li {
+//     display: flex;
+//     align-items: center;
+//     gap: 5px;
+//   }
+// }

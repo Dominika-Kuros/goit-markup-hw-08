@@ -1,80 +1,75 @@
-
-
 .lorem-ipsum__description {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.46;
   letter-spacing: 0.03em;
   text-align: left;
- 
+
   @media screen and (min-width: 768px) {
-  
-  
-    }
-    
-  
-  
+    max-width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 270px;
+  }
 }
 .lorem-ipsum__list {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
-  flex-basis: 354px;
   align-items: center;
   justify-content: center;
-  max-width: 100%;
+  max-width: 767px;
+  padding-right: 40px;
 
   @media screen and (min-width: 768px) {
-      
-      
-      
-    }
-
+    max-width: 1199px;
     & h4 {
       text-align: left;
     }
-    
-  
-   
-    @media screen and (min-width: 1200px) {
-      
-      flex-wrap: nowrap;
-      max-width: 1200px;
-      margin-left: 200px;
-    }
-
-    & h4 {
-      text-align: left;
-    }
-    
-  }
-
-
-.lorem-ipsum__wrapper--icon-element {
-  background: #f5f4fa;
-  width: 450px;
-  height: 120px;
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 30px;
-  border-radius: 4px;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-
-  @media screen and (min-width: 768px) {
-    width: 354px;
-    height: 120px;
-    
-    
   }
 
   @media screen and (min-width: 1200px) {
-    width: 270px;
+    flex-wrap: nowrap;
+    max-width: 31600px;
+    & h4 {
+      text-align: left;
+    }
+  }
+
+  &--list-item {
+    max-width: 380px;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (min-width: 768px) {
+      max-width: 354px;
+    }
+  }
+
+  .lorem-ipsum__wrapper--icon-element {
+    background: #f5f4fa;
+    width: 450px;
     height: 120px;
     display: flex;
-    flex-wrap: nowrap;
-    max-width: 100%;
-  
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+      height: 120px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+      height: 120px;
+      display: flex;
+      flex-wrap: nowrap;
+      max-width: 100%;
+    }
   }
 }

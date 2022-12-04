@@ -1,6 +1,6 @@
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   line-height: 1.5;
   color: #212121;
   background-color: #fff;
@@ -9,24 +9,53 @@ body {
 .container {
   min-width: 320px;
   max-width: 1170px;
-  padding-left: 15px;
-  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 }
-
+@media (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+}
 .page-header {
-  box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%),
-    0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+  height: 60px;
+  width: 480px;
+}
+@media (min-width: 767px) {
+  .menu {
+    display: none;
+  }
 }
 
+.page-header__logo {
+  width: 134px;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 0.28;
+  letter-spacing: 0.03em;
+  margin-left: 20px;
+  position: absolute;
+  margin-top: -50px;
+}
+
+@media (min-width: 767px) {
+  .menu {
+    display: none;
+  }
+}
 .page-header .container {
   min-height: 80px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
-
+@media (min-width: 767px) {
+  .menu {
+    display: none;
+  }
+}
 .menu {
   display: flex;
   padding: 0;
@@ -34,7 +63,7 @@ body {
   list-style: none;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .menu {
     display: none;
   }
@@ -45,26 +74,34 @@ body {
   color: inherit;
   text-decoration: none;
 }
-
+@media (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+}
 .menu .link:hover,
 .menu .link:focus {
   text-decoration: underline;
 }
-
+@media (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+}
 .menu-toggle {
   min-height: 40px;
   min-width: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-
-  margin: 0;
-  padding: 0;
+  margin-bottom: 15px;
+  padding: 15px;
   background-color: transparent;
   cursor: pointer;
   border: none;
   border-radius: 50%;
   outline: none;
+  color: red;
 }
 
 @media (min-width: 768px) {
@@ -75,7 +112,8 @@ body {
 
 .menu-toggle:hover,
 .menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  color: var(--primary-color);
 }
 
 .menu-container {
@@ -85,33 +123,84 @@ body {
   width: 100vw;
   height: 100vh;
   padding: 32px;
-  background-color: #3f51b5;
+  background-color: white;
   z-index: 999;
 
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
 }
-
+@media (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+}
 .menu-container.is-open {
   transform: translateX(0);
 }
 
 .menu-container .menu-toggle {
   position: absolute;
-  top: 16px;
+  top: 10px;
   right: 16px;
-  color: #fff;
+  color: red;
 }
 
 .mobile-menu {
   padding: 0;
   margin: 0;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  font-size: 40px;
 }
-
+@media (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+}
 .mobile-menu .link {
   display: block;
   padding: 10px;
-  color: #fff;
+  color: black;
   text-decoration: none;
+}
+
+.mobile-menu__link-contact-tel {
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: calc(40 / 34);
+  letter-spacing: 0.02em;
+  color: var(--secondary-color);
+}
+.mobile-menu__list-contact-tel {
+  margin-bottom: 32px;
+}
+.mobile-menu__link-contact-mailto {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  letter-spacing: 0.02em;
+
+  color: var(black);
+}
+.mobile-menu__list-contact-mailto {
+  margin-bottom: 64px;
+}
+.mobile-menu__list-social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.mobile-menu__link-social {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+  letter-spacing: 0.02em;
+  color: var(--secondary-color);
+}
+.mobile-menu__item-social:not(:last-child) .mobile-menu__link-social {
+  display: flex;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
