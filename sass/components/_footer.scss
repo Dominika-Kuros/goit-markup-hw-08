@@ -20,6 +20,10 @@
     gap: 70px;
     margin-top: -30px;
     text-align: left;
+    max-width: 1600px;
+    margin-left: 50px;
+     
+      
   }
 
   &__background {
@@ -43,11 +47,14 @@
       align-items: center;
       margin-left: -50px;
       
+      
     }
     @media screen and (min-width: 1200px) {
       color: white;
       flex-direction: column;
       gap: 9px;
+      text-align: left;
+      align-items:flex-start;
     }
   }
 
@@ -73,6 +80,7 @@
     @media screen and (min-width: 1200px) {
       padding-bottom: 20px;
       padding-top: 0;
+      margin-left: -50px;
     }
   }
 

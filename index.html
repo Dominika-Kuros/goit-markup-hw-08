@@ -22,10 +22,6 @@
     <div class="basic-container">
       <header class="header page-header">
         <div class="container">
-          <a href="index.html" class="page-header__logo">
-            <span class="logo__blue">Web</span
-            ><span class="logo__black">Studio</span>
-          </a>
           <button
             class="menu-toggle js-open-menu"
             aria-expanded="false"
@@ -34,7 +30,7 @@
             <svg
               width="24"
               height="24"
-              fill="black"
+              fill="currentcolor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -51,10 +47,10 @@
             <li><a href="" class="link">Portfolio</a></li>
             <li><a href="" class="link">Kontakt</a></li>
           </ul>
-          <!-- <ul class="mobile-menu__list-contact">
+          <ul class="mobile-menu__list-contact">
             <li class="mobile-menu__list-contact-tel">
-              <a class="mobile-menu__link-contact-tel" href="tel:+380961111111"
-                >+38 096 111 11 11</a
+              <a class="mobile-menu__link-contact-tel" href="tel:+48111111111"
+                >+48 111 111 111</a
               >
             </li>
             <li class="mobile-menu__list-contact-mailto">
@@ -106,41 +102,43 @@
                 >LinkedIn</a
               >
             </li>
-          </ul> -->
+          </ul>
         </div>
-
+        <a
+          href="index.html"
+          class="page-header__logo page-header__desktop-logo"
+        >
+          <span class="logo__blue">Web</span
+          ><span class="logo__black">Studio</span>
+        </a>
         <nav>
-          <ul class="header__nav">
+          <ul class="nav">
             <li>
-              <a
-                href="index.html"
-                class="header__nav--agencja header__nav--underline"
+              <a href="index.html" class="nav__agencja nav__underline"
                 >Agencja</a
               >
             </li>
             <li>
-              <a href="portfolio.html" class="header__nav--portfolio"
-                >Portfolio</a
-              >
+              <a href="portfolio.html" class="nav__portfolio">Portfolio</a>
             </li>
-            <li><a href="#" class="header__nav--contact">Kontakt</a></li>
+            <li><a href="#" class="nav__contact">Kontakt</a></li>
           </ul>
         </nav>
 
-        <ul class="header__contacts">
+        <ul class="contacts">
           <li>
-            <svg class="header__contacts--icon" width="20" height="16">
+            <svg class="contacts__icon" width="20" height="16">
               <use href="./images/icons.svg#icon-envelope"></use>
             </svg>
-            <a href="mailto:info@devstudio.com" class="header__contacts--e-mail"
+            <a href="mailto:info@devstudio.com" class="contacts__e-mail"
               >info@devstudio.com</a
             >
           </li>
           <li>
-            <svg class="header__contacts--icon" width="16" height="20">
+            <svg class="contacts__icon" width="16" height="20">
               <use href="./images/icons.svg#icon-smartphone"></use>
             </svg>
-            <a href="tel:+48111111111" class="header__contacts--ph-number">
+            <a href="tel:+48111111111" class="contacts__ph-number">
               +48 111 111 111</a
             >
           </li>
@@ -810,7 +808,7 @@
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
         <svg
-          fill="black"
+          fill="currentcolor"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -829,7 +827,7 @@
         <li><a href="" class="link">Portfolio</a></li>
         <li><a href="" class="link">Kontakt</a></li>
       </ul>
-      <!-- <ul class="mobile-menu__list-contact">
+      <ul class="mobile-menu__list-contact">
         <li class="mobile-menu__list-contact-tel">
           <a class="mmobile-menu__link-contact-tel" href="tel:+380961111111"
             >+38 096 111 11 11</a
@@ -884,7 +882,7 @@
             >LinkedIn</a
           >
         </li>
-      </ul> -->
+      </ul>
     </div>
 
     <script
