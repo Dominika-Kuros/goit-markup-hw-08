@@ -65,14 +65,14 @@ body {
 .menu-toggle {
   min-height: 40px;
   min-width: 40px;
-background-color: transparent;
+  background-color: transparent;
   cursor: pointer;
   border: none;
   border-radius: 50%;
   outline: none;
   color: black;
   position: absolute;
-  margin-left: 40px;
+  left: 65px;
   @media (min-width: 768px) {
     display: none;
   }
@@ -150,5 +150,4 @@ background-color: transparent;
 }
 .js-close-menu {
   position: absolute;
-  
 }
