@@ -5,7 +5,36 @@ body {
   color: #212121;
   background-color: #fff;
 }
+@media (max-width: 768px) {
+  .container {
+    min-width: 320px;
+    max-width: 767px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 
+@media (min-width: 768px) {
+  .container {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .header .container {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 768px) {
+  .header .container {
+    display: none;
+  }
+}
 .mobile-menu {
   display: flex;
   padding: 0;
@@ -36,20 +65,14 @@ body {
 .menu-toggle {
   min-height: 40px;
   min-width: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 15px;
-  padding-left: 400px;
-  background-color: transparent;
+background-color: transparent;
   cursor: pointer;
   border: none;
   border-radius: 50%;
   outline: none;
   color: black;
   position: absolute;
-  top: 5px;
-
+  margin-left: 40px;
   @media (min-width: 768px) {
     display: none;
   }
@@ -124,4 +147,8 @@ body {
 .mobile-menu__item-social:not(:last-child) .mobile-menu__link-social {
   padding-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+.js-close-menu {
+  position: absolute;
+  
 }

@@ -1,7 +1,12 @@
 @media (max-width: 768px) {
   .header {
     height: 60px;
-    width: 480px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    
 
     &__logo {
       width: 134px;
@@ -10,9 +15,6 @@
       font-size: 24px;
       line-height: 0.28;
       letter-spacing: 0.03em;
-      margin-left: 18px;
-      margin-top: 35px;
-      position: absolute;
     }
   }
 }
@@ -23,7 +25,7 @@
     display: flex;
     justify-content: center;
     height: 80px;
-    width: 768px;
+    max-width: 100%;
 
     &__logo {
       width: 145px;
@@ -66,11 +68,13 @@
   .container {
     min-width: 320px;
     max-width: 767px;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: relative;
   }
 }
+
 @media (min-width: 768px) {
   .container {
     display: none;
