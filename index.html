@@ -19,39 +19,34 @@
   </head>
 
   <body>
-    
-      <header class="header basic-container">
-        <a
-          href="index.html"
-          class="header__logo"
-        >
+    <header class="header basic-container">
+      <div class="container">
+        <a href="index.html" class="header__logo">
           <span class="logo__blue">Web</span
-          ><span class="logo__black">Studio</span>
-        </a>
-        <div class="container">
-      
-          <button
-            class="menu-toggle js-open-menu"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-          >
-            <svg
-              width="24"
-              height="24"
-              fill="currentcolor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </button>
+          ><span class="logo__black">Studio</span></a>
+        
 
-        </div>
-        <div class="basic-container">
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="currentcolor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+      
+      <div class="basic-container">
         <nav>
           <ul class="nav">
             <li>
@@ -84,8 +79,10 @@
             >
           </li>
         </ul>
-      </header>
-    </div>
+        </div>
+      </div>
+    </header>
+
     <main>
       <section class="banner__background section">
         <h1 class="banner__title">
@@ -160,30 +157,39 @@
         <h2 class="what-we-do__title">Czym się zajmujemy</h2>
         <ul class="what-we-do__list">
           <li>
-            <img
-              src="./images/img(2).jpg"
-              alt="typing on the keyboard"
-              width="370"
-              height="294"
-            />
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="./images/img(2).jpg, ./images/img(2)-2x.jpg"
+                type="image/jpg"
+              />
+
+              <img src="./images/img(2).jpg" alt="typing on keyboard" />
+            </picture>
             <div class="what-we-do__description">APLIKACJE KOMPUTEROWE</div>
           </li>
           <li>
-            <img
-              src="./images/img(1).jpg"
-              alt="ux design"
-              width="370"
-              height="294"
-            />
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="./images/img(1).jpg, ./images/img(1)-2x.jpg"
+                type="image/jpg"
+              />
+
+              <img src="./images/img(1).jpg" alt="ux design" />
+            </picture>
             <div class="what-we-do__description">APLIKACJE MOBLINE</div>
           </li>
           <li>
-            <img
-              src="./images/img(3).jpg"
-              alt="colour palette"
-              width="370"
-              height="294"
-            />
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="./images/img(3).jpg, ./images/img(3)-2x.jpg"
+                type="image/jpg"
+              />
+
+              <img src="./images/img(3).jpg" alt="colour palette" />
+            </picture>
             <div class="what-we-do__description">ROZWIĄZANIA GRAFICZNE</div>
           </li>
         </ul>
@@ -196,11 +202,16 @@
           <ul class="our-team__background our-team__list">
             <li>
               <picture>
+                <source 
+                  media="(max-width: 479px)"
+                  srcset="./images/img1-mobile320.jpg, ./images/img2-mobile-2x.jpg"
+                  type="image/jpg"
+                />
                 <source
                   media="(min-width: 1200px)"
                   srcset="
                     ./images/img1-desktop.jpg,
-                    ./img/image1-desktop-2x.jpg
+                    ./images/img1-desktop-2x.jpg
                   "
                   type="image/jpg"
                 />
@@ -212,17 +223,20 @@
                 />
 
                 <source
-                  media="(max-width: 767px)"
+                  media="(min-width: 480px)"
                   srcset="./images/img1-mobile.jpg, ./images/img1-mobile-2x.jpg"
                   type="image/jpg"
                 />
-                <img src="./images/Product.jpg" alt="a men with a laptop" />
+                
+                <img src="./images/Product.jpg" 
+                
+                alt="a men with a laptop" />
               </picture>
 
               <h4>John Doe</h4>
               Product Designer
               <div class="our-team__social-media-box">
-                <a href="" class="circle">
+                <a href="">
                   <svg
                     class="our-team__social-media-box--icon"
                     width="44"
@@ -263,11 +277,16 @@
 
             <li>
               <picture>
+                <source 
+                  media="(max-width: 479px)"
+                  srcset="./images/img2-mobile320.jpg, ./images/img2-mobile-2x.jpg"
+                  type="image/jpg"
+                />
                 <source
                   media="(min-width: 1200px)"
                   srcset="
                     ./images/img2-desktop.jpg,
-                    ./img/image2-desktop-2x.jpg
+                    ./images/img2-desktop-2x.jpg
                   "
                   type="image/jpg"
                 />
@@ -331,11 +350,16 @@
 
             <li>
               <picture>
+                <source 
+                  media="(max-width: 479px)"
+                  srcset="./images/img3-mobile320.jpg, ./images/img3-mobile-2x.jpg"
+                  type="image/jpg"
+                />
                 <source
                   media="(min-width: 1200px)"
                   srcset="
                     ./images/img3-desktop.jpg,
-                    ./img/image3-desktop-2x.jpg
+                    ./images/img3-desktop-2x.jpg
                   "
                   type="image/jpg"
                 />
@@ -399,11 +423,16 @@
 
             <li>
               <picture>
+                <source 
+                  media="(max-width: 479px)"
+                  srcset="./images/img4-mobile320.jpg, ./images/img4-mobile-2x.jpg"
+                  type="image/jpg"
+                />
                 <source
                   media="(min-width: 1200px)"
                   srcset="
                     ./images/img4-desktop.jpg,
-                    ./img/image4-desktop-2x.jpg
+                    ./images/img4-desktop-2x.jpg
                   "
                   type="image/jpg"
                 />
@@ -419,6 +448,7 @@
                   srcset="./images/img4-mobile.jpg, ./images/img4-mobile-2x.jpg"
                   type="image/jpg"
                 />
+                
                 <img src="./images/UI.jpg" alt="beard man" />
               </picture>
 
@@ -810,7 +840,7 @@
             target="_blank"
             rel="nofollow noopener noreferrer"
             aria-label="facebook"
-            >
+          >
             Facebook</a
           >
         </li>
