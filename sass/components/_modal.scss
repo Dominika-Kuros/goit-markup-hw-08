@@ -24,17 +24,25 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
-  right: 94px;
+  right: 25px;
   top: 524px;
-  position: fixed;
+  position: absolute;
   @media screen and (min-width: 480px) {
-    right: 198px;
+    right: 25px;
     top: 534px;
-
-    @media screen and (min-width: 1200px) {
-      right: 350px;
-      top: 550px;
-    }
+  }
+  @media screen and (min-width: 768px) {
+    right: 166px;
+    top: 534px;
+  }
+  @media screen and (min-width: 1200px) {
+    right: 348px;
+    top: 546px;
+  }
+  &:hover {
+    background: none;
+    border-radius: 50%;
+    box-shadow: none;
   }
 }
 
@@ -42,10 +50,4 @@
   position: absolute;
   top: 31%;
   left: 31%;
-}
-
-.modal__close-btn:hover {
-  background: none;
-  border-radius: 50%;
-  box-shadow: none;
 }
