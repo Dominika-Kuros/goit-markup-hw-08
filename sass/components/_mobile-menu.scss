@@ -50,18 +50,17 @@ body {
 }
 
 .menu-toggle {
-  
-    min-height: 40px;
-    min-width: 40px;
-    background-color: transparent;
-    cursor: pointer;
-    border: none;
-    border-radius: 50%;
-    outline: none;
-    color: black;
-    position: absolute;
-    left: 260px;
-  
+  min-height: 40px;
+  min-width: 40px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  color: black;
+  position: absolute;
+  left: 260px;
+
   @media (min-width: 480px) {
     left: 425px;
   }
