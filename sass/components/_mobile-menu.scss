@@ -115,7 +115,7 @@ body {
     font-size: 20px;
     line-height: 0.28;
     letter-spacing: 0.02em;
-    color: var(black);
+    color: var(--primary-color);
     @media screen and (min-width: 480px) {
       font-size: 34px;
     }
