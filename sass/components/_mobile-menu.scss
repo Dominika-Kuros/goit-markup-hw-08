@@ -66,13 +66,13 @@ body {
     text-decoration: none;
     flex-direction: column;
     font-size: 40px;
+    color: black;
     @media (min-width: 767px) {
       display: none;
     }
 
     &link {
       padding: 10px;
-      color: inherit;
       display: block;
       padding: 10px;
       color: black;
@@ -142,7 +142,10 @@ body {
     padding-right: 10px;
     border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
-}
+  & a:visited{
+    color:black}
+  }
+
 .js-close-menu {
   position: absolute;
   right: 20px;
