@@ -3,6 +3,7 @@
   height: 630px;
   background-color: #fff;
   margin: auto;
+  position: relative;
 
   @media screen and (min-width: 480px) {
     width: 450px;
@@ -24,21 +25,10 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
-  right: 25px;
-  top: 524px;
+  right: 10px;
+  top: 10px;
   position: absolute;
-  @media screen and (min-width: 480px) {
-    right: 25px;
-    top: 534px;
-  }
-  @media screen and (min-width: 768px) {
-    right: 166px;
-    top: 534px;
-  }
-  @media screen and (min-width: 1200px) {
-    right: 348px;
-    top: 546px;
-  }
+
   &:hover {
     background: none;
     border-radius: 50%;

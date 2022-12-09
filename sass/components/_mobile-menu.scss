@@ -7,7 +7,6 @@ body {
 }
 
 .container {
-  max-width: 768px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -57,14 +56,15 @@ body {
   border-radius: 50%;
   outline: none;
   color: black;
-  position: fixed;
-  right: 10px;
 
   @media (min-width: 768px) {
     display: none;
   }
 }
-
+.js-open-menu {
+  position: absolute;
+  right: 0;
+}
 .menu-toggle:hover,
 .menu-toggle:focus {
   background-color: transparent;
@@ -132,10 +132,13 @@ body {
 }
 .mobile-menu__link-social {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 10px;
   line-height: 0.22;
   letter-spacing: 0.02em;
   color: var(--secondary-color);
+  @media screen and (min-width: 480px) {
+    font-size: 18px;
+  }
 }
 .mobile-menu__item-social:not(:last-child) .mobile-menu__link-social {
   padding-right: 10px;
