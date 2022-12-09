@@ -34,10 +34,12 @@
     border-radius: 50%;
     box-shadow: none;
   }
-}
 
-.modal__close-btn svg {
+  & svg {
   position: absolute;
   top: 31%;
   left: 31%;
 }
+}
+
+

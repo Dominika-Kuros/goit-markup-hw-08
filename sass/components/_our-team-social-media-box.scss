@@ -4,16 +4,15 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-}
-.our-team__social-media-box--icon {
-  fill: var(--clients-color);
-  border-radius: 50%;
-  transition-property: color, background-color;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
-}
-
-.our-team__social-media-box--icon:hover {
-  --color1: var(--white-color);
-  background-color: var(--primary-color);
+  &--icon {
+    fill: var(--clients-color);
+    border-radius: 50%;
+    transition-property: color, background-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    &:hover {
+      --color1: var(--white-color);
+      background-color: var(--primary-color);
+    }
+  }
 }

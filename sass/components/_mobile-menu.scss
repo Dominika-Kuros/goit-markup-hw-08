@@ -7,44 +7,12 @@ body {
 }
 
 .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-}
-
-.header .container {
-  min-height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.mobile-menu__list {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  text-decoration: none;
-  flex-direction: column;
-  font-size: 40px;
-  @media (min-width: 767px) {
-    display: none;
-  }
-}
-
-.mobile-menu .link {
-  padding: 10px;
-  color: inherit;
-  display: block;
-  padding: 10px;
-  color: black;
-  text-decoration: none;
-}
-
-.mobile-menu .link:hover,
-.mobile-menu .link:focus {
-  color: var(--primary-color);
+  min-width: 320px;
+  max-width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .menu-toggle {
@@ -56,19 +24,21 @@ body {
   border-radius: 50%;
   outline: none;
   color: black;
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    color: var(--primary-color);
+  }
 
   @media (min-width: 768px) {
     display: none;
+    
   }
 }
 .js-open-menu {
   position: absolute;
-  right: 0;
-}
-.menu-toggle:hover,
-.menu-toggle:focus {
-  background-color: transparent;
-  color: var(--primary-color);
+  right:15px;
+  bottom:7px;
 }
 
 .menu-container {
@@ -82,67 +52,96 @@ body {
   z-index: 999;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
-}
-
-.menu-container.is-open {
-  transform: translateX(0);
-}
-.mobile-menu__link-contact {
-  display: flex;
-  flex-direction: column;
-}
-.mobile-menu__list-contact {
-  padding-top: 240px;
-  margin-left: -30px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 30px;
-}
-
-.mobile-menu__link-contact-tel {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 0.4;
-  letter-spacing: 0.02em;
-  color: rgba(117, 117, 117, 1);
-  @media screen and (min-width: 480px) {
-    font-size: 34px;
+  &.is-open {
+    transform: translateX(0);
   }
 }
 
-.mobile-menu__link-contact-mailto {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 0.28;
-  letter-spacing: 0.02em;
-  color: var(black);
-  @media screen and (min-width: 480px) {
-    font-size: 34px;
-  }
-}
+.mobile-menu {
+  &__list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    flex-direction: column;
+    font-size: 40px;
+    @media (min-width: 767px) {
+      display: none;
+    }
 
-.mobile-menu__list-social {
-  padding-top: 40px;
-  margin-left: -30px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-.mobile-menu__link-social {
-  font-weight: 500;
-  font-size: 10px;
-  line-height: 0.22;
-  letter-spacing: 0.02em;
-  color: var(--secondary-color);
-  @media screen and (min-width: 480px) {
-    font-size: 18px;
+    &link {
+      padding: 10px;
+      color: inherit;
+      display: block;
+      padding: 10px;
+      color: black;
+      text-decoration: none;
+    }
+
+    &link &hover,
+    &link &focus {
+      color: var(--primary-color);
+    }
   }
-}
-.mobile-menu__item-social:not(:last-child) .mobile-menu__link-social {
-  padding-right: 10px;
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
+
+  &__link-contact {
+    display: flex;
+    flex-direction: column;
+  }
+  &__list-contact {
+    padding-top: 240px;
+    margin-left: -30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  &__link-contact-tel {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 0.4;
+    letter-spacing: 0.02em;
+    color: rgba(117, 117, 117, 1);
+    @media screen and (min-width: 480px) {
+      font-size: 34px;
+    }
+  }
+
+  &__link-contact-mailto {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 0.28;
+    letter-spacing: 0.02em;
+    color: var(black);
+    @media screen and (min-width: 480px) {
+      font-size: 34px;
+    }
+  }
+
+  &__list-social {
+    padding-top: 40px;
+    margin-left: -30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  &__link-social {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 0.22;
+    letter-spacing: 0.02em;
+    color: var(--secondary-color);
+    @media screen and (min-width: 480px) {
+      font-size: 18px;
+    }
+  }
+  &__item-social:not(:last-child) &__link-social {
+    padding-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
 }
 .js-close-menu {
   position: absolute;
