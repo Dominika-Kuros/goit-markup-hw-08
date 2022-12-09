@@ -78,7 +78,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .nav {
     display: none;
   }
@@ -228,7 +228,7 @@
     &__e-mail {
       font-size: 14px;
 
-      &:hover .contacts__icon {
+      &:hover &__icon {
         fill: var(--primary-color);
         cursor: pointer;
       }
@@ -236,7 +236,7 @@
     &__ph-number {
       font-size: 14px;
 
-      &:hover .contacts__icon {
+      &:hover &__icon {
         fill: var(--primary-color);
         cursor: pointer;
       }
