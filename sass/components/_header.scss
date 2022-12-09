@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .header {
     height: 60px;
     width: 768px;
@@ -24,7 +24,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .header {
     border-bottom: 1px solid rgba(236, 236, 236, 1);
     display: flex;
@@ -46,7 +46,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .header {
     border-bottom: 1px solid rgba(236, 236, 236, 1);
     display: flex;
@@ -78,13 +78,13 @@
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .nav {
     display: none;
   }
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .nav {
     display: flex;
     justify-content: center;
@@ -130,7 +130,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .nav {
     display: flex;
     justify-content: space-between;
@@ -149,12 +149,12 @@
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .contacts {
     display: none;
   }
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .contacts {
     display: flex;
     flex-direction: column;
@@ -162,9 +162,6 @@
     margin-left: 530px;
     margin-top: -50px;
     gap: 10px;
-    transition-property: fill;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
 
     &__e-mail {
       width: 135px;
@@ -173,6 +170,9 @@
       line-height: 0.16;
       letter-spacing: 0.02em;
       color: #757575;
+      transition-property: fill;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 250ms;
 
       &:hover &__icon {
         fill: var(--primary-color);
@@ -186,6 +186,9 @@
       font-size: 12px;
       line-height: 0.16;
       letter-spacing: 0.02em;
+      transition-property: fill;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 250ms;
 
       &:hover &__icon {
         fill: var(--primary-color);
@@ -193,9 +196,6 @@
       }
     }
 
-    & li:hover a {
-      color: var(--primary-color);
-    }
     &__icon {
       fill: var(--contacts-color);
       transition-property: fill;
@@ -216,8 +216,7 @@
     }
   }
 }
-
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .contacts {
     display: flex;
     flex-direction: row;
@@ -229,7 +228,7 @@
     &__e-mail {
       font-size: 14px;
 
-      &:hover &__icon {
+      &:hover .contacts__icon {
         fill: var(--primary-color);
         cursor: pointer;
       }
@@ -237,15 +236,15 @@
     &__ph-number {
       font-size: 14px;
 
-      &:hover &__icon {
+      &:hover .contacts__icon {
         fill: var(--primary-color);
         cursor: pointer;
       }
     }
 
-    // & li:hover a {
-    //   color: var(--primary-color);
-    // }
+    & li:hover a {
+      color: var(--primary-color);
+    }
     &__icon {
       width: 12px;
       height: 16px;
