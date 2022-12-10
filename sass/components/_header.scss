@@ -21,9 +21,12 @@
     border-bottom: 1px solid rgba(236, 236, 236, 1);
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: 80px;
     width: 1600px;
     padding-bottom: 10px;
+    padding-top: 0px;
+    padding-left: 0px;
   }
 
   &__logo {
@@ -33,22 +36,21 @@
     font-size: 24px;
     line-height: 0.28;
     letter-spacing: 0.03em;
-    left: 10px;
+    left: 20px;
     bottom: 20px;
     position: absolute;
     @media screen and (min-width: 768px) {
-      &__logo {
-        width: 145px;
-        font-family: "Raleway";
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 0.31;
-        letter-spacing: 0.03em;
-        padding-top: 46px;
-        padding-bottom: 25px;
-        position: absolute;
-      }
+      width: 145px;
+      font-family: "Raleway";
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 0.31;
+      letter-spacing: 0.03em;
+      padding-top: 46px;
+      padding-bottom: 10px;
+      position: absolute;
     }
+
     @media screen and (min-width: 1200px) {
       width: 145px;
       font-family: "Raleway";
@@ -56,43 +58,43 @@
       font-size: 26px;
       line-height: 0.31;
       letter-spacing: 0.03em;
-      padding-top: 45px;
-      padding-bottom: 5px;
-      margin-left: 20px;
+      padding-top: 46px;
+      padding-bottom: 10px;
+      position: absolute;
     }
   }
-}
 
-.header {
-  &.container {
-    min-height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  .header {
+    &.container {
+      min-height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
   }
-}
-.nav {
-  display: none;
+  .nav {
+    display: none;
 
-  @media screen and (min-width: 768px) {
-    display: flex;
-    justify-content: center;
-    gap: 60px;
-    margin-right: 70px;
-    margin-top: 35px;
-  }
-  @media screen and (min-width: 1200px) {
-    justify-content: space-between;
-    gap: 46px;
-    margin-left: 220px;
-    margin-top: 32px;
-    max-width: 254px;
-  }
-  &__underline {
-    position: relative;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      left: 200px;
+      top: 19px;
+      position: absolute;
+    }
+    @media screen and (min-width: 1200px) {
+      justify-content: space-between;
+      gap: 46px;
+      max-width: 254px;
+      left: 300px;
+      top: 18px;
+      position: absolute;
+    }
+    &__underline {
+      position: relative;
 
-    &::after {
-      @media screen and (min-width: 768px) {
+      &::after {
         position: absolute;
         content: "";
         width: 53px;
@@ -103,116 +105,137 @@
         width: 100%;
       }
     }
-    @media screen and (min-width: 1200px) {
-      margin-top: 37px;
-    }
-  }
 
-  &__item {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 0.16;
-    letter-spacing: 0.02em;
-    color: var(--secondary-color);
-  }
-}
-
-.contacts {
-  display: none;
-
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-left: 530px;
-    margin-top: -50px;
-    gap: 10px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    flex-direction: row;
-    margin-left: 740px;
-    margin-top: -35px;
-    gap: 30px;
-  }
-
-  &__e-mail {
-    @media screen and (min-width: 768px) {
-      width: 135px;
+    &__item {
       font-weight: 500;
-      font-size: 12px;
+      font-size: 14px;
       line-height: 0.16;
       letter-spacing: 0.02em;
-      color: #757575;
-      transition-property: fill;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      transition-duration: 250ms;
-    }
-    @media screen and (min-width: 1200px) {
-      font-size: 14px;
-    }
-    &:hover &__icon {
-      fill: var(--primary-color);
-      cursor: pointer;
-    }
-  }
-  &__ph-number {
-    @media screen and (min-width: 768px) {
-      width: 110px;
-      color: #757575;
-      font-weight: 500;
-      font-size: 12px;
-      line-height: 0.16;
-      letter-spacing: 0.02em;
-      transition-property: fill;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      transition-duration: 250ms;
-      margin-left: -3px;
-    }
-    @media screen and (min-width: 1200px) {
-      font-size: 14px;
-    }
-    &:hover &__icon {
-      fill: var(--primary-color);
-      cursor: pointer;
+      color: var(--secondary-color);
     }
   }
 
-  &__icon {
-    @media screen and (min-width: 768px) {
-      fill: var(--contacts-color);
-      transition-property: fill;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      transition-duration: 250ms;
-      width: 10px;
-      height: 14px;
-      margin-left: 20px;
+  .contacts {
+    display: none;
 
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-left: 540px;
+      margin-top: 25px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-top: 18px;
+      padding-left: 250px;
+      gap: 30px;
+    }
+    &__list {
+      @media screen and (min-width: 768px) {
+        transition-property: fill;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
+        &:hover .contacts__list--icon {
+          color: var(--primary-color);
+          fill: var(--primary-color);
+          cursor: pointer;
+        }
+      }
       @media screen and (min-width: 1200px) {
-        width: 20px;
-        height: 16px;
+      }
+
+      &--e-mail {
+        @media screen and (min-width: 768px) {
+          width: 161px;
+          height: 16px;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 0.14;
+          letter-spacing: 0.02em;
+          color: #757575;
+          transition-property: fill, color;
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-duration: 250ms;
+          &:hover {
+            color: var(--primary-color);
+            fill: var(--primary-color);
+            cursor: pointer;
+          }
+        }
+        @media screen and (min-width: 1200px) {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 14px;
+          line-height: 0.16;
+        }
+      }
+      &--ph-number {
+        @media screen and (min-width: 768px) {
+          width: 161px;
+          height: 16px;
+          color: #757575;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 0.14;
+          letter-spacing: 0.02em;
+          transition-property: fill, color;
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-duration: 250ms;
+          margin-left: -1px;
+
+          &:hover {
+            color: var(--primary-color);
+            fill: var(--primary-color);
+            cursor: pointer;
+          }
+        }
+        @media screen and (min-width: 1200px) {
+          font-size: 14px;
+          line-height: 0.16;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: 15px;
+        }
+      }
+
+      &--icon {
+        @media screen and (min-width: 768px) {
+          fill: var(--contacts-list-color);
+          width: 12px;
+          height: 16px;
+          margin-right: 5px;
+          margin-bottom: -3px;
+          &:hover a {
+            fill: var(--primary-color);
+            cursor: pointer;
+          }
+          @media screen and (min-width: 1200px) {
+            width: 16px;
+            height: 20px;
+            margin-right: 0px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+          }
+        }
+      }
+      &--icon-envelope {
+        @media screen and (min-width: 768px) {
+          margin-right: 5px;
+          margin-top: 5px;
+        }
+        @media screen and (min-width: 1200px) {
+          width: 20px;
+          height: 16px;
+          margin-right: 3px;
+          margin-top: 2px;
+        }
       }
     }
-
-    &:hover {
-      --contacts-color: var(--primary-color);
-      cursor: pointer;
-    }
   }
-  &__icon--envelope {
-    width: 20px;
-    height: 16px;
-    margin-top: 2px;
-  }
-}
-.contacts {
-  li {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-  }
-}
-a:hover .contacts__icon {
-  fill: var(--primary-color);
-  cursor: pointer;
 }
