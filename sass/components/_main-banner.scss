@@ -46,6 +46,15 @@ main .banner__background {
           rgba(47, 48, 58, 0.4)
         ),
         url("../images/Img.jpg");
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+          ),
+          url("../images/Img-2x.jpg");
+      }
       max-width: 1600px;
       margin: 0 auto;
       padding: 0 15;
