@@ -8,7 +8,7 @@ body {
 
 .container {
   min-width: 320px;
-  max-width: 1170px;
+  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -32,13 +32,12 @@ body {
 
   @media (min-width: 768px) {
     display: none;
-    
   }
 }
 .js-open-menu {
   position: absolute;
-  right:15px;
-  bottom:7px;
+  right: 15px;
+  bottom: 7px;
 }
 
 .menu-container {
@@ -142,9 +141,10 @@ body {
     padding-right: 10px;
     border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
-  & a:visited{
-    color:black}
+  & a:visited {
+    color: black;
   }
+}
 
 .js-close-menu {
   position: absolute;
