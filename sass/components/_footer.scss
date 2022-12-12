@@ -7,24 +7,15 @@
   gap: 70px;
 
   @media screen and (min-width: 768px) {
-    flex-direction: row;
+    row-gap: 60px;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 70px;
-    margin-top: -30px;
-    text-align: left;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 603px;
+    justify-content: space-around;
+    flex-direction: row;
   }
   @media screen and (min-width: 1200px) {
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 70px;
     text-align: left;
-    max-width: 1600px;
-    margin-left: 50px;
+    align-items: baseline;
+    flex-wrap: nowrap;
   }
 
   &__background {
@@ -45,7 +36,6 @@
     @media screen and (min-width: 768px) {
       justify-content: center;
       align-items: center;
-      margin-left: -50px;
     }
     @media screen and (min-width: 1200px) {
       color: white;
@@ -78,14 +68,20 @@
     @media screen and (min-width: 1200px) {
       padding-bottom: 20px;
       padding-top: 0;
-      margin-left: -50px;
     }
   }
 
   &__address--color {
     color: #757575;
   }
-
+  // &__social-title {
+  //   @media screen and (min-width: 768px) {
+  //     margin-left: 35px;
+  //   }
+  //   @media screen and (min-width: 1200px) {
+  //     margin-left: 0px;
+  //   }
+  // }
   &__social-media-box {
     font-size: 14px;
     align-items: center;
@@ -93,6 +89,9 @@
     margin: top -20px;
     @media screen and (min-width: 768px) {
       display: inline-block;
+      justify-content: space-around;
+      width: 206px;
+      max-width: 100%;
     }
 
     @media screen and (min-width: 1200px) {
@@ -116,18 +115,16 @@
   &__newsletter {
     margin-top: -30px;
     font-size: 14px;
-
-    @media screen and (min-width: 768px) {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin-top: -30px;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 570px;
 
     @media screen and (min-width: 1200px) {
-      display: inline-block;
-      margin-top: -30px;
+      flex-direction: row;
+      flex-wrap: wrap;
     }
 
     &--input {
@@ -139,7 +136,8 @@
       width: 300px;
       max-width: 100%;
       color: rgba(255, 255, 255, 0.6);
-
+      margin-left: auto;
+      margin-right: auto;
       @media screen and (min-width: 480px) {
         width: 450px;
       }
@@ -166,6 +164,8 @@
       margin-top: 20px;
       box-shadow: rgba(0, 0, 0, 0.15);
       border: 0;
+      margin-left: auto;
+      margin-right: auto;
       cursor: pointer;
       @media screen and (min-width: 1200px) {
         margin-left: 12px;
